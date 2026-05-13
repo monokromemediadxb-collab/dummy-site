@@ -5,30 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monokrome Media - Coming Soon</title>
     <style>
+        :root {
+            color-scheme: dark;
+            --bg: #000;
+            --fg: #fff;
+            --muted: rgba(255, 255, 255, 0.72);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            padding: 0;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
+            padding: 2rem;
+            background-color: var(--bg);
+            color: var(--fg);
+            font-family: "Avenir Next", "Helvetica Neue", sans-serif;
             text-align: center;
         }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
+
+        main {
+            width: min(100%, 760px);
         }
+
+        img {
+            display: block;
+            width: min(100%, 640px);
+            height: auto;
+            margin: 0 auto;
+        }
+
         p {
-            font-size: 1.5em;
+            margin: 1.5rem 0 0;
+            font-size: 0.82rem;
+            letter-spacing: 0.38em;
+            text-transform: uppercase;
+            color: var(--muted);
         }
     </style>
 </head>
 <body>
-    <h1>Monokrome Media</h1>
-    <p>Coming Soon</p>
+    <main>
+        <img src="assets/monokrome-logo.png" alt="Monokrome logo">
+        <p>Coming Soon</p>
+    </main>
 </body>
 </html>
